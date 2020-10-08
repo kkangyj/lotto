@@ -7,4 +7,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--    결과화면 테마-->
+    <style name="AppTheme.Result" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryResult</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkResult</item>
+        <item name="colorAccent">@color/coloraCCENTResult</item>
+    </style>
+
+    <!--    별자리화면 테마-->
+    <style name="AppTheme.Constellation" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryConstellation</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkConstellation</item>
+        <item name="colorAccent">@color/colorAccentConstellation</item>
+
+        <item name="colorButtonNormal">@color/colorButtonConstellation</item>
+
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="AppTheme.Name" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryName</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkName</item>
+        <item name="colorAccent">@color/colorAccentName</item>
+
+        <item name="colorButtonNormal">@color/colorButtonName</item>
+
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>
