@@ -20,7 +20,7 @@ class NameActivity : AppCompatActivity() {
 
             val intent = Intent(this, ResultActivity::class.java)
 
-            intent.putIntegerArrayListExtra("result", ArrayList(getLottoNumbersFromHash(editText.text.toString())))
+            intent.putIntegerArrayListExtra("result", ArrayList(LottoNumberMaker.getLottoNumbersFromHash(editText.text.toString())))
 
             intent.putExtra("name", editText.text.toString())
 
@@ -33,17 +33,5 @@ class NameActivity : AppCompatActivity() {
 
     }
 
-    fun getLottoNumbersFromHash(name: String): MutableList<Int> {
-        val list = mutableListOf<Int>()
 
-        for (number in 1..45) {
-            list.add(number)
-        }
-
-        val targetString = SimpleDateFormat("yyyy-MM-dd", Locale.KOREA).format(Date()) + name
-
-        list.shuffle(Random(targetString.hashCode().toLong()))
-
-        return list.subList(0, 6)
-    }
 }
